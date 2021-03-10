@@ -6,13 +6,6 @@
 #define RUN_FAST ios::sync_with_stdio(false);
 using namespace std;
 
-//int row[]={0, 0, -1, 1};///4 adjacent(Up, down, left, right)
-//int col[]={1, -1, 0, 0};
-
-//int row[]={-2, -2, 2, 2, -1, -1, 1, 1};///Knight moves on
-//int col[]={1, -1, 1, -1, 2, -2, 2, -2};///chess board
-
-
 void toposort(int indeg[], int nodes, vector <int> adj[])
 {
     int i, x, tmp, len;
