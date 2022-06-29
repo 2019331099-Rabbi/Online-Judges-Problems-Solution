@@ -7,5 +7,6 @@ If you have any query, contact me.</br>
 **Fazla Rabbi**</br>
 **Shahjalal University of Science & Technology, Sylhet 3114, Bangladesh,**</br>
 **Department of Computer Science and Engineering.**</br>
-***shahedrabbi955@gmail.com, fazla99@student.sust.edu***</br>
+***Email: shahedrabbi955@gmail.com, fazla99@student.sust.edu***</br>
+***Facebook: [FazlaRabbi](https://www.facebook.com/fazlarabbi955)***</br>
 **Thank you.**
