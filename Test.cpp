@@ -9,15 +9,18 @@ using namespace std;
 
 /**
 --------------Longest Common Subsequence-------------------
-You are given two string. Find out the longest common subsequence between them.
 
-Test Case:
-abcdefghij
-cdgi
-Output: 4
+abcabcaa
 
-abcdef
-cdef
+      a  c  b  a  c  b  a
+   a  5 -1 -1 -1 -1 -1 -1 
+   b -1  4  4 -1 -1 -1 -1 
+   c -1  4 -1  3  3 -1 -1 
+   a -1 -1  3  3 -1  2  1 
+   b -1 -1  3 -1  2  2 -1 
+   c -1 -1 -1  2  2 -1  1 
+   a -1 -1 -1  2 -1  1  1 
+   a -1 -1 -1 -1  1  1  1 
 */
 
 string s1, s2;
