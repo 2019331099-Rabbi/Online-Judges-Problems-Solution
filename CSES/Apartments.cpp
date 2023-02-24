@@ -12,30 +12,30 @@ void solve()
     int n, m, k;
 
     cin >> n >> m >> k;
-    vector <int> len(n), des(m);
+    vector <int> des(n), gib(m);
 
-    for (int i = 0; i < n; i++) cin >> len[i];
-    for (int i = 0; i < m; i++) cin >> des[i];
+    for (auto &xx: des) cin >> xx;
+    for (auto &xx: gib) cin >> xx;
     sort(des.begin(), des.end());
+    sort(gib.begin(), gib.end());
 
-    int cnt = 0;
+    int ans = 0, i = 0, j = 0;
 
-    if (!k) {
-        for (auto xx: len) if (binary_search(des.begin(), des.end(), xx)) cnt++;
-    }
-    else {
-        for (auto xx: len) {
-            int lower = lower_bound(des.begin(), des.end(), xx - k + 1) - des.begin();
-            int upper = upper_bound(des.begin(), des.end(), xx + k - 1) - des.begin();
-            if (lower < upper) cnt++;
+    while (i < n && j < m) {
+        if (abs(des[i] - gib[j]) <= k) ans++, i++, j++;
+        else {
+            if (des[i] - gib[j] > k) j++;
+            else i++;
         }
     }
-    cout << cnt << endl;
+    cout << ans << endl;
 }
 
 int main()
 {
     RUN_FAST; cin.tie(nullptr);
-    solve();
+    int T = 1;
+    //cin >> T;
+    while (T--) solve();
     return 0;
 }

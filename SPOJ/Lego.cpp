@@ -8,7 +8,7 @@
 using namespace std;
 
 struct brick{
-    int x1,x2,y1,y2,id;
+    int x1, x2, y1, y2, id;
     brick(int x1, int y1, int x2, int y2, int id):x1(x1),y1(y1),x2(x2),y2(y2),id(id){}
 };
 
@@ -33,11 +33,12 @@ int main()
         else return point1.x1 < point2.x1;
     });
 
-    for(auto& [i, v] : mp) {
-        sort(v.begin(), v.end(), [&](auto &poitn1, auto &point2) {
-        return poitn1.x1 < point2.x1;
+    for(auto [i, v]: mp) {
+        sort(v.begin(), v.end(), [&](auto &point1, auto &point2) {
+        return point1.x1 < point2.x1;
         });
     };
+
 
     // for (auto xx: bricks) cout << xx.id << ' ' << xx.x1 << ' ' << xx.y1 << ' ' << xx.x2 << ' ' << xx.y2 << endl;
     // for(auto& [i, v] : mp){
