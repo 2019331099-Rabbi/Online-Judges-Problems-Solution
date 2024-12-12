@@ -1,7 +1,7 @@
 #include <bits/stdc++.h>
 #define endl '\n'
 #define PI acos(-1)
-#define sz 100000010
+#define sz 10000010
 #define inf 1e9 + 9
 #define mod 1000000007
 #define RUN_FAST ios::sync_with_stdio(false);

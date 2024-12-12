@@ -1,0 +1,30 @@
+#include <bits/stdc++.h>
+#define endl '\n'
+#define PI acos(-1)
+#define sz 200010
+#define inf 1000000009
+#define mod 100000000
+#define RUN_FAST ios::sync_with_stdio(false);
+using namespace std;
+
+void solve(int T)
+{
+    int pressed, time, check;
+
+    cin >> pressed >> time >> check;
+
+    int res = time / check;
+    res++;
+    res *= check;
+    res += pressed;
+    cout << "Case " << T << ": " << res << endl;
+}
+
+int main()
+{
+    RUN_FAST; cin.tie(nullptr);
+    int T;
+    cin >> T;
+    for (int i = 1; i <= T; i++) solve(i);
+    return 0;
+}
